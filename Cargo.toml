@@ -1,8 +1,15 @@
 [package]
-name = "data-backend"
+name = "butler"
 version = "0.1.0"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+FileHandler = { path = "lib/FileHandler" }
+clap = { version = "3.2.5", features = ["derive"] }
+
+[[bin]]
+edition = "2021"
+name = "butler"
+path = "src/main.rs"
