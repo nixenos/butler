@@ -18,3 +18,4 @@ Cargo.lock
 
 lib/*/target/**
 lib/*/target
+lib/FileHandler/target/**
