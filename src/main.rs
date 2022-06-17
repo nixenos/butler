@@ -15,7 +15,10 @@ struct Args {
 }
 fn main() -> Result<(), std::io::Error> {
     let args = Args::parse();
-    let result = parse_file_to_json(String::from(args.input_file));
-    let _output_file = fs::write(args.output_file, result.unwrap());
+    let result = parse_file_to_json(
+        String::from(args.input_file),
+        String::from(args.output_file),
+    );
+    // let _output_file = fs::write(args.output_file, result.unwrap());
     return Ok(());
 }

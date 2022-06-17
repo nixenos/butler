@@ -14,6 +14,7 @@ serde_json = "*"
 indicatif = "*"
 num_cpus = "*"
 crossbeam-channel = "*"
+nom = "5.0.1"
 
 [lib]
 name = "FileHandler"
