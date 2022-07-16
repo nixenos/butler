@@ -98,7 +98,7 @@ pub fn parse_file_to_json(filename: String, output_filename: String) -> Result<S
         let temp_data = rx_child.recv().unwrap();
         let _output_file = writeln!(
             output_file,
-            "[{}]",
+            "{}",
             serde_json::to_string(&temp_data).unwrap()
         );
         result_vector.push(temp_data);
